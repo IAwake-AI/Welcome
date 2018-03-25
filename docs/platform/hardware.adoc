@@ -1,0 +1,8 @@
+## Purpose
+
+This document contains hardware requirements and current inventory.
+
+## Overview
+
+Details are tracked
+https://docs.google.com/spreadsheets/d/1TeB6ZhaQFuZIPXZHv9B_DeVAp1P5UZvsl76PLlouE18/edit#gid=0[here].

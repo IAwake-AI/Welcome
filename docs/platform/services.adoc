@@ -1,0 +1,111 @@
+# Purpose
+
+This document outlines the various platform services that are required.
+
+# Overview
+
+## Service manager
+
+*Requirements*:
+
+- Deploy services
+- Access logs
+
+*Options*:
+
+- http://kubernetes.io/[Kubernetes]
+
+## Network lookup
+
+*Requirements*:
+
+- Provide interface to lookup devices and services on the network
+- Inventory devices and services
+
+*Options*:
+
+- http://www.thekelleys.org.uk/dnsmasq/doc.html[dnsmasq]
+- Manually maintain /etc/hosts on workstations
+
+*Questions*:
+
+- Will there be devices that are unable to use DNS?
+- What is the expected load on this service? What are the resource
+requirements at that load?
+
+## Ingress
+
+*Requirements*:
+
+- Route traffic from devices and debugging stations to services
+
+*Options*:
+
+- https://github.com/kubernetes/ingress-nginx[NGINX ingress controller]
+- What is the expected load on this service? What are the resource
+requirements at that load?
+
+## Infrastructure monitoring
+
+*Requirements*:
+
+- Allow for administrators to analyze system health
+- Monitor service, system and hardware health
+- Warn administrators when health checks cross accepted thresholds
+- Warn administrators when monitoring service is not healthy
+
+*Options*:
+
+- https://github.com/coreos/prometheus-operator/tree/master/contrib/kube-prometheus[kube-prometheus]
+
+*Questions*:
+
+- Do we want to include monitoring for hardware components on the robot?
+- Do we want to include environmental metrics? Wind, visibility, etc?
+- In what cases are there fail-over scenarios? Which of these be automated
+and triggered by alerts?
+- What are the resource requirements of this service?
+- Will there be someone at the playa site at all times?
+
+## Detection
+
+*Requirements*:
+
+- Detect poses and faces in audience
+
+*Options*:
+
+Links to available options and relevant research can be found
+https://docs.google.com/document/d/1eNrWOeiVOmFWQhHKw8vTgIy2nQw7MVz9ZwObrBC-h0k/edit[here]
+
+*Questions*:
+
+- What are we trying to detect?
+- What is the interface?
+- What is the desired and required latency? What are the resource
+requirements to meet those requirements?
+
+## Sensor pre-processing
+
+*Questions*:
+
+- Will there be any pre-processing of sensor output required
+(e.g. wind meters, cameras/lasers/etc used for position tracking)?
+- What is the interface?
+- What is the desired and required latency? What are the resource
+requirements to meet those requirements?
+
+## ROS
+
+*Questions*:
+
+- What services will need to be run on servers?
+- How will these interface with other services, sensors and devices?
+- What are the resource requirements of these services?
+
+## ROS monitoring
+
+*Questions*:
+
+- What services will be need to be run?
+- What are the resource requirements of these services?
