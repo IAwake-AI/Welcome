@@ -1,0 +1,39 @@
+# Purpose
+
+This document outlines the ordering of tasks, along with their timelines
+and statuses.
+
+# Overview
+
+[options="header"]
+|===
+|Item|Date|Status
+|Outline project and preliminary research|???|In progress
+|Research detection implementations|???|TODO
+|Create and deploy detection service|???|TODO
+|Create test fixtures for detection service|???|TODO
+|Deploy service manager service on AWS|???|TODO
+|Automate provisioning|???|TODO
+|Deploy infrastructure monitoring service|???|TODO
+|Create alerts|???|TODO
+|Implement automatic failovers|???|TODO
+|Test sensor and device integration|???|TODO
+|Deploy network lookup service|???|TODO
+|Deploy ingress service|???|TODO
+|Deploy ROS|???|TODO
+|Deploy ROS monitoring|???|TODO
+|Test platform against installed robot at SF site|???|TODO
+|Security audit and improveements|???|TODO
+|Acquire hardware|???|TODO
+|Setup LAN provisioning|???|TODO
+|Migrate to on premises environment|???|TODO
+|Define on-call playbook|???|TODO
+|Define on-call rotation|???|TODO
+|Train system administrators|???|TODO
+|Train on-call administrators|???|TODO
+|Move hardware to playa site|???|TODO
+|Install hardware on playa site|???|TODO
+|Test platform against installed robot at playa site|???|TODO
+|Uninstall hardware on playa site|???|TODO
+|Move hardware from playa site|???|TODO
+|Sell and/or store hardware|???|TODO
