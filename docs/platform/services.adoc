@@ -66,7 +66,7 @@ requirements at that load?
 
 - Do we want to include monitoring for hardware components on the robot?
 - Do we want to include environmental metrics? Wind, visibility, etc?
-- In what cases are there fail-over scenarios? Which of these be automated
+- In what cases are there fail-over scenarios? Which of these can be automated
 and triggered by alerts?
 - What are the resource requirements of this service?
 - Will there be someone at the playa site at all times?
