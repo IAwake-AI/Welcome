@@ -24,6 +24,7 @@ This document outlines the various platform services that are required.
 
 *Options*:
 
+- https://coredns.io/[CoreDNS]
 - http://www.thekelleys.org.uk/dnsmasq/doc.html[dnsmasq]
 - Manually maintain /etc/hosts on workstations
 
@@ -42,6 +43,9 @@ requirements at that load?
 *Options*:
 
 - https://github.com/kubernetes/ingress-nginx[NGINX ingress controller]
+
+*Questions*:
+
 - What is the expected load on this service? What are the resource
 requirements at that load?
 
