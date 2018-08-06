@@ -17,6 +17,9 @@ We recommend setting up an Ubuntu 18.04 (Bionic) machine and install the latest 
 sudo apt install ros-melodic-desktop
 ```
 
+<img src="static/images/IAwake_bringup_rviz_ROS.png" alt="I, Awake Rviz" width="400px"/>
+
+
 ### Create the robot's workspace:
 ```
 cd ~/
