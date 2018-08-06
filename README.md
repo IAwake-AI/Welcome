@@ -92,11 +92,18 @@ catkin_make
 
 
 # Update any robot params, review the files in these directories:
+```
 cd ~/SOFTWARE/OP3/src/ROBOTIS-OP3/op3_manager/config
+cd ~/SOFTWARE/OP3/src/ROBOTIS-OP3-Common/op3_description/urdf
 cd ~/SOFTWARE/OP3/src/ROBOTIS-Framework/robotis_device/devices/dynamixel
-cd ~/SOFTWARE/OP3/src/ROBOTIS-OP3-Demo/op3_bringup/launch
-cd /media/SOFTWARE/OP3/src/ROBOTIS-OP3-Common/op3_description/launch
+```
 
+# Edit any launch files
+```
+cd ~/SOFTWARE/OP3/src/ROBOTIS-OP3-Demo/op3_bringup/launch
+cd ~/SOFTWARE/OP3/src/ROBOTIS-OP3-Common/op3_description/launch
+cd ~/SOFTWARE/OP3/src/ROBOTIS-OP3-Common/op3_gazebo/launch
+```
 
 
 # Launching the robot
