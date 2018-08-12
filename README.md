@@ -82,9 +82,14 @@ mkdir build
 cd build
 cmake ..
 make
+sudo make install
+cd ~/SOFTWARE
 ```
 
-
+You may also need to install the QT5 library (https://wiki.qt.io/Install_Qt_5_on_Ubuntu) and add to your ~/.bashrc:
+```
+export CMAKE_PREFIX_PATH=/<location where you installed QT>/:$CMAKE_PREFIX_PATH
+```
 
 
 
