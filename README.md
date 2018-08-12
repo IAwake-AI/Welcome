@@ -67,12 +67,15 @@ git clone https://github.com/RobotWebTools/rosbridge_suite.git
 git clone https://github.com/pantor/ros-control-center.git
 git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP-Series-Data.git
 git clone https://github.com/ros-perception/vision_opencv.git
+git clone https://github.com/ros/common_msgs.git
+git clone https://github.com/ros/std_msgs.git
 ```
 
 ## Other dependencies
 ```
 sudo apt install ros-melodic-octomap* 
-sudo apt install ros-melodic-rosbridge-server ros-melodic-web-video-server
+sudo apt install libncurses5-dev
+sudo apt install ros-melodic-rosbridge-server ros-melodic-web-video-server ros-melodic-camera-info-manager
 sudo apt install ros-melodic-geometry2 ros-nav-msgs
 sudo apt install libsdl1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev
 sudo apt install ros-melodic-ros-control ros-melodic-ros-controllers
@@ -87,13 +90,24 @@ sudo make install
 cd ~/SOFTWARE
 ```
 
-You may also need to install the QT5 library (https://wiki.qt.io/Install_Qt_5_on_Ubuntu) and add to your ~/.bashrc:
+You may also need to install the QT5 library (https://wiki.qt.io/Install_Qt_5_on_Ubuntu) or
 ```
-export CMAKE_PREFIX_PATH=/<location where you installed QT>/:$CMAKE_PREFIX_PATH
+sudo apt install qt5-default
 ```
 
+Before continuing, make sure you have something like this in your ~/.bashrc:
+```
+source /opt/ros/melodic/setup.bash
+source /<location of home directory>/SOFTWARE/OP3/devel/setup.bash
 
+export CMAKE_PREFIX_PATH=/<location where you installed QT>/x86)64-linux-gnu/cmake/Qt5Widgets/:$CMAKE_PREFIX_PATH
+```
 
+# Make sure we have all ROS dependencies
+```
+cd ~/SOFTWARE/OP3
+rosdep install --from-paths ./src --ignore-src -r -y
+```
 
 # Build all the ROS packages
 ```
