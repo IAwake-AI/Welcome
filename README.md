@@ -74,11 +74,10 @@ git clone https://github.com/ros/std_msgs.git
 ## Other dependencies
 ```
 sudo apt install ros-melodic-octomap* 
-sudo apt install libncurses5-dev
+sudo apt install libncurses5-dev scilab libsdl1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev
 sudo apt install ros-melodic-rosbridge-server ros-melodic-web-video-server ros-melodic-camera-info-manager
-sudo apt install ros-melodic-geometry2 ros-nav-msgs
-sudo apt install libsdl1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev
-sudo apt install ros-melodic-ros-control ros-melodic-ros-controllers
+sudo apt install ros-melodic-geometry2 ros-nav-msgs ros-melodic-ros-control ros-melodic-ros-controllers
+
 cd ~/SOFTWARE
 git clone https://github.com/sbpl/sbpl.git
 cd sbpl
@@ -110,11 +109,13 @@ rosdep install --from-paths ./src --ignore-src -r -y
 ```
 
 # Build all the ROS packages
+Open a new terminal then:
 ```
 cd ~/SOFTWARE/OP3
 catkin_make
 ```
 
+Congratulations!  Now that things are build, please explore some of the software stack.
 
 # Update any robot params, review the files in these directories:
 ```
