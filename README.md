@@ -13,6 +13,8 @@ tl;dr We performed robot brain surgery and placed the OP3 brain in a modified Po
 
 We recommend setting up an Ubuntu 18.04 (Bionic) machine and install the latest ROS desktop:
 
+Following instructions here: http://wiki.ros.org/melodic/Installation/Ubuntu
+
 ```
 sudo apt install ros-melodic-desktop
 ```
@@ -63,8 +65,6 @@ git clone https://github.com/OctoMap/octomap_mapping.git
 git clone https://github.com/OctoMap/octomap_ros.git
 git clone https://github.com/RobotWebTools/rosbridge_suite.git
 git clone https://github.com/pantor/ros-control-center.git
-git clone https://github.com/EESC-LabRoM/rosweb.git
-git clone https://github.com/RobotWebTools/web_video_server.git
 git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP-Series-Data.git
 ```
 
@@ -72,11 +72,12 @@ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP-Series-Data.git
 ```
 sudo apt install ros-melodic-octomap* 
 sudo apt install ros-melodic-rosbridge-server ros-melodic-web-video-server
-sudo apt install ros-melodic-arm-navigation ros-melodic-geometry2 ros-nav-msgs
+sudo apt install ros-melodic-geometry2 ros-nav-msgs
 sudo apt install libsdl1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev
+sudo apt install ros-melodic-ros-control ros-melodic-ros-controllers
 cd ~/SOFTWARE
 git clone https://github.com/sbpl/sbpl.git
-cd sbpl/src
+cd sbpl
 mkdir build
 cd build
 cmake ..
