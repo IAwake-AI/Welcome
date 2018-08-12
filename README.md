@@ -66,6 +66,7 @@ git clone https://github.com/OctoMap/octomap_ros.git
 git clone https://github.com/RobotWebTools/rosbridge_suite.git
 git clone https://github.com/pantor/ros-control-center.git
 git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP-Series-Data.git
+git clone https://github.com/ros-perception/vision_opencv.git
 ```
 
 ## Other dependencies
@@ -90,6 +91,7 @@ You may also need to install the QT5 library (https://wiki.qt.io/Install_Qt_5_on
 ```
 export CMAKE_PREFIX_PATH=/<location where you installed QT>/:$CMAKE_PREFIX_PATH
 ```
+
 
 
 
