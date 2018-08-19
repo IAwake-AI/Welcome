@@ -87,7 +87,21 @@ cmake ..
 make
 sudo make install
 cd ~/SOFTWARE
+git clone https://github.com/OctoMap/octomap.git
 ```
+Follow the instructions and install the dependencies show here (https://github.com/OctoMap/octomap/wiki/Compilation-and-Installation-of-OctoMap)
+
+```
+cd octomap
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+```
+
+
+
 
 You may also need to install the QT5 library (https://wiki.qt.io/Install_Qt_5_on_Ubuntu) or
 ```
