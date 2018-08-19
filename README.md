@@ -100,7 +100,11 @@ make
 sudo make install
 ```
 
-
+Make sure your .bashrc file has the necessary exports, adding if necessary, the location of the octomap library (may also be in /usr/include/octomap and /usr/lib)
+```
+export OCTOMAP_INCLUDE_DIRS=/usr/local/include/octomap
+export OCTOMAP_LIBRARIES=/usr/local/lib 
+```
 
 
 You may also need to install the QT5 library (https://wiki.qt.io/Install_Qt_5_on_Ubuntu) or
